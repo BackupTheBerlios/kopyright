@@ -1,0 +1,705 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>KopyRightViewBase</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>KopyRightViewBase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>608</width>
+            <height>560</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QFrame" row="0" column="0">
+            <property name="name">
+                <cstring>frame17</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>7</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="frameShape">
+                <enum>StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Raised</enum>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="KRuler">
+                    <property name="name">
+                        <cstring>m_fillRuler</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>7</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <property name="maxValue">
+                        <number>1000</number>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>m_totalSize</cstring>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>116</red>
+                            <green>116</green>
+                            <blue>116</blue>
+                        </color>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>00.00 b</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QSplitter" row="1" column="0">
+            <property name="name">
+                <cstring>splitter42</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <widget class="QSplitter">
+                <property name="name">
+                    <cstring>splitter39</cstring>
+                </property>
+                <property name="orientation">
+                    <enum>Vertical</enum>
+                </property>
+                <widget class="KListView">
+                    <column>
+                        <property name="text">
+                            <string>New Estruct</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>Length</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>Size</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <property name="name">
+                        <cstring>m_newStruct</cstring>
+                    </property>
+                    <property name="allColumnsShowFocus">
+                        <bool>true</bool>
+                    </property>
+                    <property name="resizeMode">
+                        <enum>AllColumns</enum>
+                    </property>
+                </widget>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>m_properties</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Raised</enum>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout17</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>pixmapVideo</cstring>
+                                    </property>
+                                    <property name="pixmap">
+                                        <pixmap>image0</pixmap>
+                                    </property>
+                                    <property name="scaledContents">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textLabel1_2</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>&lt;b&gt;Video&lt;/b&gt;</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer1</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>180</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>m_propVideoSize</cstring>
+                                    </property>
+                                    <property name="paletteForegroundColor">
+                                        <color>
+                                            <red>0</red>
+                                            <green>0</green>
+                                            <blue>255</blue>
+                                        </color>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>1</bold>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>00.00 b</string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <widget class="Line">
+                            <property name="name">
+                                <cstring>lineVideo</cstring>
+                            </property>
+                            <property name="frameShape">
+                                <enum>HLine</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                        </widget>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout119</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>m_videoShrink</cstring>
+                                    </property>
+                                    <property name="sizePolicy">
+                                        <sizepolicy>
+                                            <hsizetype>1</hsizetype>
+                                            <vsizetype>0</vsizetype>
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textLabel1</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>% of original quality</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer11</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>220</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </hbox>
+                        </widget>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout20</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>pixmapAudio</cstring>
+                                    </property>
+                                    <property name="pixmap">
+                                        <pixmap>image1</pixmap>
+                                    </property>
+                                    <property name="scaledContents">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textLabel3</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>&lt;b&gt;Audio&lt;/b&gt;</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer2</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>220</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>m_propAudioSize</cstring>
+                                    </property>
+                                    <property name="paletteForegroundColor">
+                                        <color>
+                                            <red>0</red>
+                                            <green>182</green>
+                                            <blue>0</blue>
+                                        </color>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>1</bold>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>00.00 b</string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <widget class="Line">
+                            <property name="name">
+                                <cstring>lineAudio</cstring>
+                            </property>
+                            <property name="frameShape">
+                                <enum>HLine</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                        </widget>
+                        <widget class="QListView">
+                            <column>
+                                <property name="text">
+                                    <string>Id</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Language</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Format</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Frequency</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Size</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <property name="name">
+                                <cstring>m_propAudio</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>4</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="allColumnsShowFocus">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizeMode">
+                                <enum>AllColumns</enum>
+                            </property>
+                        </widget>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout21</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>pixmapSubpicture</cstring>
+                                    </property>
+                                    <property name="pixmap">
+                                        <pixmap>image2</pixmap>
+                                    </property>
+                                    <property name="scaledContents">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textLabel4</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>&lt;b&gt;Subpictures&lt;/b&gt;</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer3</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>170</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>m_propSubpictureSize</cstring>
+                                    </property>
+                                    <property name="paletteForegroundColor">
+                                        <color>
+                                            <red>175</red>
+                                            <green>0</green>
+                                            <blue>0</blue>
+                                        </color>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>1</bold>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>00.00 b</string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <widget class="Line">
+                            <property name="name">
+                                <cstring>lineSubpicture</cstring>
+                            </property>
+                            <property name="frameShape">
+                                <enum>HLine</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                        </widget>
+                        <widget class="QListView">
+                            <column>
+                                <property name="text">
+                                    <string>Id</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Language</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Size</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <property name="name">
+                                <cstring>m_propSubpictur</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>7</hsizetype>
+                                    <vsizetype>4</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="allColumnsShowFocus">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizeMode">
+                                <enum>AllColumns</enum>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+            </widget>
+            <widget class="QSplitter">
+                <property name="name">
+                    <cstring>splitter10</cstring>
+                </property>
+                <property name="orientation">
+                    <enum>Vertical</enum>
+                </property>
+                <widget class="KListView">
+                    <column>
+                        <property name="text">
+                            <string>Estruct</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>Length</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>Size</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <property name="name">
+                        <cstring>m_struct</cstring>
+                    </property>
+                    <property name="allColumnsShowFocus">
+                        <bool>true</bool>
+                    </property>
+                    <property name="resizeMode">
+                        <enum>AllColumns</enum>
+                    </property>
+                    <property name="dragEnabled">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>m_preview</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>7</hsizetype>
+                            <vsizetype>7</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Raised</enum>
+                    </property>
+                </widget>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="1643">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000006324944415458859d973d6c54d915c77ff77dcc8767c6188c0db6c56291c58434201969b5203a948a2ac51691d291224a91284ab565ca2455e8b6a0a10929235120a522d24a816a83642c1624b262e28f6011339ef1ccbc7bcfd9e2dd37ef3e7b40519e7435f7ddf771fee77ffee77fdf983b77eefcfcca952bbfaed56aa9880880aa521ce1fce8dac7ae7d684d5549d3b4b6b1b1b171fffefddf72f7eedd97aaaa22a2ffef21e19072381175222a7e3811cdb24c55559f3c79a28b8b8bbf4b6ab55a3dcb32f6f6f6c8c623223b44399e450e1f30d397a7a45d5937281aa538524e9f9ec718431cc7e712e79c1863103be6f77ffa8a7fbcea93341a791c3df27a058c4e5f9f7652991a92c10e5ffef20b566efd18e71caa4a02604c44ac966fbe3be0e24f7ec3e54f4e723802e740441107d6828ae66b0e9c2822fe7ae517d49fabe6e7a8425ae36f7ff903ffdddb25499209b04455514f7aa35ee3872b1daeacced23f04b1607d70911c90753988628807e5c403738a683e970a8084939d26268a2aa24c8a7af942311c09fd211c0ea50c64153b091a02c88315000b302a1e906705057509ce292632b9227ccca4981803116642b14c0916665e392fe8f7f39c193f342f1d061030c6a02a471828d2f7644840e964eeb30a83dba20436b8a708ee4a16f0ba15c9130d355b01600c653dade60185490017645894445cf94c012c14a5933c730544158ca974f204803139082da8552f3a0fc41699db601e682464a7089c0b519930ae6030d31928b4e054cbac8a97391017ae078c548297ac58f16debdb5235ff35413c55f56da88a3186c8984080414d1d01ed41096cd8829e1d5f0af1cf5b018a96d4a20ba66a20d761813a3416a75a1159c148858d42279e11f16044f212089e0113b47d5503068399086fa2fab0c5dc71ba9d2b3d420246ac2b9f9bb4a32ac64495925719a0ac95785a35e8efc9cb424b9ef846605621482117b6372463a694a020c418e3a92fe93f3ef4589b15cc4860cdd6f9725abf1ee7d7a6fb4060c5aa85604a2f3f6e44d575093490051ac9855ade5b3050f1012df66daf817247d30f663da96d91b104161c0ad40640a2fc9dc5367f4c03d5fe2c3cbcdc568bad75024473b32a811c156790bd051be5efc118242842be19f92f1d5190a886460635291a81443e2820261f0eb0284ec16a3eb77eee54c97c173855ac333811ac18ac8d30e807ac384e699b217ffdf3577c7d7216e77283525764afa878d3f276aabed55424774a2deef125542606a0d4a8bdff27697dbdf2519b0088380e478e2f7ff533ee6c6f13c57189b2d23539fa719661c719511c11c7114992620c9828227cac6839cd8b4e9cacb3786699c160503210c771da6834e8743acccdcd71e1c2a7a80ace09f57a8d667386a3c7ab57afd9ddd9a5dd6e331a67743a2d2e5dfaf4d87d2eb3f4fb03d4c8c480b22ca3d56a51afd731c698647373f39ba74f9f2e2d2c2cd06eb769b55ac4718ab596e170c49b375da228c23947bd5e2749129acd1a177e709e288ab0d6e29ca3dbede29c238a229224a196d4d87cb349e6323ebbfc194e1dc3e190f7efdfb3b5b5c5e3c78f3938383834ad56ebd29933677eb1bcbc7c637e7efef4eaeaeadcdada5a6b6565255d5858603c1e53afd71111ce9d3b5720278aa209c52282b51655c539c7783c469cf0bafb9aaded2d74a4faedcb6fc72f5ebc38d8dedededfd9d9d9ed76bb2ffbfdfec3a2c22780156001584c9264b9d96c2ecfcccc2cb6dbedb3b76fdffefce6cd9b27debe7d4bb3d9cccdc4988a988c310c0603666666d8dfdfe7debd7bffdaddd97d31180cb6fb83fe7fc6e3f10eb00bec01ef806d60a7e8827d3f008cb536e9f57a8d5eaf97f67abdcbe7cf9f7f78f1e245e6e7e7999d9d2549127abd1ea3d188388e69b55a341a0ddebd7b4792240c874346a3d156f7dfdd3f029bc0d08f43c012b8f1b1cdc85fcca228ca565757595b5b5bbd7af5ea8953a74ed16ab51011e238666e6e6ef2405182a5a525e238264912ae5fbfbebab1b1e180efa6c428bb60da629aa6dcb87183a5a525e6e7e7bfb876ed1af57a1de75c89d2d35efc8647b3d9e4d6ad5b671f3c78f079afd7fbda67febf03585c5ca4dfeff3ecd933d6d7d76b8f1e3d9a7c427de808afd56a359e3f7f4e9aa69f009d8f0198f257b37a743a9d1fc571fc53e0ecc7001c7dafb576dceff7ff0e3ca4d4d7b1e37b72e8e9ba24bddf540000000049454e44ae426082</data>
+    </image>
+    <image name="image1">
+        <data format="PNG" length="2456">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000095f494441545885c5976b7055d519869fbdf7b9df92939384432e860009a15c420a24121001012dc462a50e4571746afd211deca0538bb655b176a63875aa62dbd152156db1d6aac41b2020442e09814002244012487248422e27979373726efbd61f3b6a6762a7b6fde19af966cfecb5d6bceff77eefacf52d41d775bec9217ea3e880407a25e80ac849e3ab3920eb7d483f029acf58a50368cf1153a6d2dcbc91442c00803807ccf7811e04bd1594223049401dc8ef805804a217b40ed0babf92c07805c4040ccd81f6c5d072195a5aa1b511f4482e15e1d5e4f95e45b24d36166bffb702e309080a44fd30b804c24f4068230c4e84c0d01b13b29d6ac9af8a9651e8dd85d5763dba0774d50894ff898084633da081a61a5f4100541064101d20a480b61a22725c10bbd7bffcf4132ea550cf39df7665157d0be6097ac12a41b02f2729168339034d93a07308fd9286e005c106fa08e8e1af4b80b19aab90503290953bb0e8db2c13973daa9a47325cc56de29f163f8f6785c35d277c382b1aed2c99b9b4a2acecb6b5cb3d9326de31a2d83724e313ef22513c033d348c20f541a78a1eff4a02e34d28008aea21967c50cc4cdd50b47cdab425cbfdac2ecfa4afbd81ad35f752f9f8ab1450c0494ef152f52b7c5859c742cb2ab6dcf313acae6c0ed747d9573540dd9e6679e47cd3419477b7231cfb185dfe1a0ac4938bb1d8df98f5fd39776f7e7a41fa6f36e5b07eae93421f4ccf4ae5950f763354dc47d0344086d9c7aadc9514df98c781feddbcf597d7986175f2e35be7b1f6a61466dd34498a4dc89fdade31f57675d0e787e6d3101bfdf70412ca464f51ceae7b7ebdf8baed8f4ee2d602332e11ae45e0d200b4c54d5c6e0d7326f13187afd4f2c63bef7256afc369755151be9294052eb6bdf722670eb7b0a66c19c57e0bb7dfe0226fe914f3a5f094d26073f65294865a88f48c27309ad8983e3fffb9c7b62f343fbeda49a6041d2350770d6a3aa1b60b4ef7422891cae5b6b799549e42e07507f1fe323e39f819076b7623a62a2cbbab9c8f9af77176cf35962f5a894b82920902e5cb7c3429b9598153e98b514f5643b4e74b0271b92ca5d0bf6bf3330bac3fbdc1829284d33d70bc136abaa065104209107498e0f5d1dc78144b6917e16b32df9dbb8d05251bb14767d3f86927a74f5791bb269503b55558066732754a010e09721c30afd44d757f5646ef39b510f5e40150c3128e3b9d48d22b773f797dc123ab9d241270ec2a5405e07c3fc414f0d820c3013e07f8bd90e88b7031b11fd11bc5deeaa5747e19d959f9cc997d2b9e9112eaf67c4aa2a48dc0199989396b914448b11a247266bad95bebcd8f072e84a1fdb88469ddeafc85d76d796c733e13cd70b81d8e74426004dc16c87481cf0e5e3ba4da20cd01192e0f07aaff8e79498281aa7e2ae6df855912b08a909b9f4bb67511674e5432a85c41922ac0e6c32440ba1da6fb042eca29341c0ae7a01c3b2e220a3797afcc25c705b5dd70b413fa2290ee30c0d31d46f6194e98e084340bcc9f91cf2c710171592198768960d749f27dc65a970825730a5992f3005a731791d1369a068c7236058da377c52227964933ae434f2b35593cb692e9050eba47e048008251487742861d52ed9062038f05dc56b09bc02c42aa13be376f0d354d95a86532d5f595dcbcb00cb300a30988aa50b1e487a4ba33c89e3c97510dcef581d5047e27ccc8828cc93996ae46e724d162b5a6b99d228dbdd01986343bf86c86e4697643b67427786de0b280d30282062be72fc3df918b9217a761f8384a2c8acf69f8c46b813c9f8fdb96df4b4e5a3a5e9b71c237f541432fe83a78d25c80c92daa9a1a96933a574260938c3aa7588df0da0c155c66237b87099c26635d9edfce12e72208c668c96ca0fe7c0d5e3b38cc63aa59c1aa1b3e4ab11ac98493d01884e601888dc4015510639158534f978ccb62649862335c9f3a66bacf01ed2663ceef862c173824b8fbc67538cefb508a86f9a46e372ec9f86f331904d2ec5f26946a05a7193a4250771586ba7a14180d9988b654d51c99b5e1feeb3d5c4c1a19b82c46dd6d66b08846fd7d4ee80b0e537bf614ed7deda8aa86437090de9a45e0dba3ecefd9477f30883b351d2d6ec8ecb0805b85a86c84db0a210d5a9b144602974610fa3a4dc4fef87ecda1924debd6fb67174cb4a0270d02f631708f0dcc429c67df7e99674f6c47f2c9b8fd16064c030cc762081e37c452b8e66fe358fd41d6dfb28eb86cb42ab26e64ed3443c40c2e1b84a2706e5f003df8d659f4f879097d78548b8ba1b6deb96bd7acf2e0720ad844c36c1e1b984972fff3f7f26a68273fbf6f135b2b1ee10725ab585a5ccc99e2b304e7f64226202bd89a9cdc51be0659074d034d3722a982a2c3a8049f7e14a3a572470fa33bdf04ed13097450ce3405bb7dfec060d1bc55cb9da47904240d526d3a8fed7c844af16fbcf6d033dce22d254a0f110224e9e5e0d039fae5111045b099e93bde4b45e177f0a7a5135740d50c605d8430b077af4cd58e0f22f4fe723744de045aa5b14b4947397af46aabdd7fae63fa9ce2990ebe3545a0fe423d0f1ddac4cc1f4da5226532dd5ca487cb34259af873b08abae12e48d8206a028b89d1cb03ccb5cc65de94624665d005102d703504afef8ab1f7a5f746f4cecdefa3f7ee024e028ae98b8b599787896c7db0eebd96b63bcf6c78e0e1cd2bfc8abb1a66e89c8b75b2a5edafe49853e84d8ed218e9272a27008781a2619c507a98a462743ea94ee88ac0dea3f0fb3f0468a9dad1c1c8ef3e82c85b402d90003091b5c5e8c1bab7018449bef9d468a0c4537f6ad9c3d39746c06c421db2511f1fa05e0f82260226d05dc018382224557c31374b4be6d33d08ff38ac50b97f90aa3d1f07d5aed71a50aaf600fb8126fea5833591fd8441c0b302d404c4cc6bcb17ccba67e7762b475a8b30ef9691331dc6160dd084b1acc742306cc4854e3c57efe3c9dfe671acb62a1ab850ddcbe09e0b68d5d5201f07ce01fde37bc292aecf5d00096de3b442c70b2f6ef54aba59e06c93ca531fdcc9c8acc3909d03aa008a36063cd6d1279370350087a46e1a6f6e21d2d9855a7d01e44b401bd00e0c8c218c1b02f3228020a0847e8112fe5986376e724843c9606f201c1bee19d2129f75337bdf044a9db3494b05bbd5d8194b40280c1de13827920db4b1078d83400f300c8480f15de83802792f802049c49a4a091d9846bcd307b1386883c010d08f80460eb7e0e306ec42260216627a9c417ae8a611991363aeeefa4f80e3097c394c801350c7988fb5c95fbcbfacc004200db08fcd4731e41d0092ff2d3880f04d3fcfff09c2f201eefbfcbea60000000049454e44ae426082</data>
+    </image>
+    <image name="image2">
+        <data format="PNG" length="1690">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af400000661494441545885c5974b6c5c5719c77fe79cfb98875f9399d813c7af182771d2b856681aa85079b82d5b84102c50162842a04a6c9010124bc4926e90d82340628384782cc202920a4a5ba9490815264e8a1b9c34716c779c99b1efcc7d9c078bf12b247652352d7fe9e8de3bbabaffdf77be73beef8c70cef1ff94b77973f6996738f7ce3bd4a288d0f3989998a0c7f70984407b1ed618422091927c9290791eed2419cd39773a1f04a7fbe178bfef8fe79c2b24697aef8e31d72e47d1f9bfdcbdfbbb5696dddd2dd02d000be3166e39c82c2076bc64a5445b0b40e65cd5b7f6c503d67ef948b9fcecd49123c383030394805c96c1fa3a683d9206c1f47b51f4b5dfcecd7de795d9d99717d7d75fdb13e0701c5f181f1abafb6aabf5b3b966f392f6bc46a21456885ca0f540398e9f1fcab2178f4b39f554b5da757064046f6c0c0e1c00a5a0d18066139204c280a0afc4f889137c49a913bf989b3bbb08d780955d010ee672fe998181d35fb875ebf47568afaeac34f2ceb97ead8b87dbedee61a544a95241eddf0f950ae4f3606dc7507910679018481c0807b18634c3584b624c05e8d9132013c279f93c4f178b8c2c2ee6935a2ddf03f4013980de1e087c90128c8154433b056d2194500aa0e443e43a2018d0023201b0eb4adf02c03a4c62498c2516920c488036e003ca00b18128856e0dfd5df0e909983c0ca510dc6dc816606d09d23a04314803cb1118b99bff0e801e811852b83b0e13692c6077be192a38d40b9f3d0a334fc3e427a03c08aa0cb6050d0f62071a50408f86e11a1c5e052bd84d5b006200e40f8b942e8de2bfaa88af2e130a28540bc8b15e38360c1387607f15827d206427ef39dd4983d9c0751bc308b0aa13bdd8bdd66ccf80018a82e0535dec1b3b046b23a024f8123c05aaa7b3da5b19580de1aedfdc06d9bcb5db4fc78f1e67696589da6a0d80fb93a381b68548439475aeeb5967c41b91ee2521400a900e420752228d44e1bbd02f9adeee3ea68e4d63b47ec80c3c4cca753ef828791242855dcba83723eaeb86f97ffbcc36d798af39cadf3afc429ff0cee5a3dcad68adf5d7de42df6f5aadf66caad33d0004bcbfa6f07b14bd45074a80273a575f42e041e88392dc7bbfc17bd7ef7073c122f3330c0e9d664dbdcef9a5efd21a8ab0c675375a4cd644713234d5970e3d37f1bdde5f957ef4f6c52b3ff1761a22d8ce5d28b8f09ae1c6df9b9cfc7c91e1638e9efd0a61253ad5c4699da8b946adbe40947854079f63eaf951cae512c5bc80b5b729eb7582085653f02d48df222a2d1aa34b3de91f39039cdb5107361252949dc2220032be5853d89f2ff256fb1a71b78fe779f4ae450cd52372675fa67ae61bf4e5437cdfc3f705cec460f2582d301aac03b739ac406412a914ce9a00286d01b805877ba5453296207229614162db92a03b64c2cbd3bf7893c6d53b0438fa8032b09265ac168ba4f13a10a054c007e8ee0e70dece47f36646fdd7b769de5dc0cbeaac8f1f434c4c92b4210d3caca7705aa3e954492dc0d94eef147b57dc5db5b50da510421604a2a0700eb2a6c6b4b2fbfbf286c563ec8bc7d6760aac95d258724ae2a98e85544fd2ea1100bfafd77f1a6bfdfd93d67687ce5104acf81801fe70e3c68fff14049706bbbabed2afd49152b95cd997cf0fbe646defc7020024ed343d37bfbafafa3c5411a2f099e1e11ff8427cf5832ced0f03b0a906d0e8eaed656c74f496de51b73f0a3d70529052e2fb3e274f9dc2f33c3eea63fb0333f0d4d41427a6a7498dc144d113dd727b02f457ab9c989ea652a990a6e913d901824e87de1c0f8b660be07333330829efebd51fc6597a6082cea129153e99b018cf20038327b7d3ba5d889cc31983d8885c08810029b7f07793434a411004140a05f279459658debda6b9fde74fda6c41b5e5ba979604e87db6a08fc5a19e04a13a6d600b40feaf8910a094d5714cde5a7c2110ce6d756d0f0885a4502812c696959525de7863ce5cbe7cf1def90be7efbc3bbfb0505bbe3717a7ed05b075200b65d835787070ba74b232239b510220365779ffc0c07dfec61806aad567670e1efce50badd6d1919b3709969729684d01507d7d5cffe6b7f9d7e42457defc5bedad8b176fcccecefeb3dd6eff03b80a2cd2f923d20032b63b55ce17feb8e77b13edb47d650b40ec32cdd2f38e578786be5e0dc353fb9cdb9f732e4ca534b5308c96d7d69757166fff278e936bc075607ec3b4c5a35ba304c42301365400fa811290dff82d0522a009d41fd3f401fd17e33fca014db1ba480000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>m_struct</sender>
+        <signal>clicked(QListViewItem*)</signal>
+        <receiver>KopyRightViewBase</receiver>
+        <slot>viewTitle(QListViewItem*)</slot>
+    </connection>
+    <connection>
+        <sender>m_newStruct</sender>
+        <signal>clicked(QListViewItem*)</signal>
+        <receiver>KopyRightViewBase</receiver>
+        <slot>viewTitle(QListViewItem*)</slot>
+    </connection>
+    <connection>
+        <sender>m_videoShrink</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>KopyRightViewBase</receiver>
+        <slot>requantTitle(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>m_propSubpictur</sender>
+        <signal>clicked(QListViewItem*)</signal>
+        <receiver>KopyRightViewBase</receiver>
+        <slot>editTitle(QListViewItem*)</slot>
+    </connection>
+    <connection>
+        <sender>m_propAudio</sender>
+        <signal>clicked(QListViewItem*)</signal>
+        <receiver>KopyRightViewBase</receiver>
+        <slot>editTitle(QListViewItem*)</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>viewTitle(QListViewItem *title)</slot>
+    <slot>editTitle(QListViewItem *stream)</slot>
+    <slot>requantTitle(const QString &amp;factor)</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>kruler.h</includehint>
+    <includehint>klistview.h</includehint>
+    <includehint>klistview.h</includehint>
+</includehints>
+</UI>
