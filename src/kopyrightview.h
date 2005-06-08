@@ -30,6 +30,7 @@
 
 class QPainter;
 class KURL;
+class QFillStatus;
 
 /**
  * This is the main view class for KopyRight.  Most of the non-menu,
@@ -96,6 +97,8 @@ private slots:
 private:
 //  KParts::ReadOnlyPart *m_html;
   double m_newStructSize;
+  QFillStatus *m_fillStatus;
+  
 };
 
 #endif // _KOPYRIGHTVIEW_H_

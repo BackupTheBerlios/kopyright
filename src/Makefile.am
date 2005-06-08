@@ -15,13 +15,13 @@ kopyright_LDADD = -ldvdread $(LIB_KFILE) $(LIB_KDEPRINT)
 
 # which sources should be compiled for kopyright
 kopyright_SOURCES = main.cpp kopyright.cpp kopyrightview.cpp 		 pref.cpp \
-	kopyrightiface.skel kopyrightviewbase.ui dvdaudio.cpp dvdaudio.h dvdcell.cpp dvdcell.h \
-	dvdchapter.cpp dvdchapter.h dvdparsing.cpp dvdparsing.h dvdstream.cpp dvdstream.h \
-	dvdsubpicture.cpp dvdsubpicture.h dvdtitle.cpp dvdtitle.h dvdvideo.cpp dvdvideo.h \
-	dvdvisualice.cpp dvdvisualice.h
+		kopyrightiface.skel kopyrightviewbase.ui dvdaudio.cpp dvdaudio.h dvdcell.cpp dvdcell.h \
+		dvdchapter.cpp dvdchapter.h dvdparsing.cpp dvdparsing.h dvdstream.cpp dvdstream.h \
+		dvdsubpicture.cpp dvdsubpicture.h dvdtitle.cpp dvdtitle.h dvdvideo.cpp dvdvideo.h \
+		dvdvisualice.cpp dvdvisualice.h qfillstatus.cpp
 
 # these are the headers for your project
-noinst_HEADERS = kopyright.h kopyrightview.h pref.h
+noinst_HEADERS = kopyright.h kopyrightview.h pref.h qfillstatus.h
 
 # client stuff
 kopyright_client_LDFLAGS = $(KDE_RPATH) $(all_libraries)

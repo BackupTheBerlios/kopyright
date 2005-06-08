@@ -20,6 +20,7 @@
 
 #include "kopyrightview.h"
 #include "dvdvisualice.h"
+#include "qfillstatus.h"
 
 #include <qpainter.h>
 #include <qlayout.h>
@@ -39,6 +40,8 @@ KopyRightView::KopyRightView(QWidget *parent) : KopyRightViewBase(parent), DCOPO
   // setup our layout manager to automatically add our widgets
   QHBoxLayout *top_layout = new QHBoxLayout(this);
   top_layout->setAutoAdd(true);
+  m_fillStatus = new QFillStatus(2700000, 4700000, m_fillFrame);
+  m_fillFrameLayout->addWidget(m_fillStatus);
 }
 
 KopyRightView::~KopyRightView()
@@ -68,12 +71,8 @@ void KopyRightView::updateSizes(QListViewItem *title)
 //  if( ((QString)title->listView()->name() == "m_newStruct") || ((QString)title->listView()->name() == "m_propAudio")
 //   || ((QString)title->listView()->name() == "m_propSubpictur")) {
 
-    m_totalSize->setText(visualiceSize(m_newStructSize));
-
-    m_fillRuler->setValue((int)m_newStructSize / 10000000);
-
-    if(m_newStructSize > 4700000000.) m_fillRuler->setPaletteBackgroundColor(QColor(238, 0, 0));
-    else m_fillRuler->setPaletteBackgroundColor(QColor(0, 238, 16));
+//    if(m_newStructSize > 4700000000.) m_fillRuler->setPaletteBackgroundColor(QColor(238, 0, 0));
+//    else m_fillRuler->setPaletteBackgroundColor(QColor(0, 238, 16));
 //  }
 
 //  m_correctSize->

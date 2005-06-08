@@ -183,9 +183,6 @@ void KopyRight::fileNew()
   m_view->m_propVideoSize->setText("00.00 b");
   m_view->m_propAudioSize->setText("00.00 b");
   m_view->m_propSubpictureSize->setText("00.00 b");
-  m_view->m_totalSize->setText("00.00 b");
-  m_view->m_fillRuler->setPaletteBackgroundColor( QColor( 238, 238, 230 ) );
-  m_view->m_fillRuler->setValue(0);
 }
 
 void KopyRight::fileOpen()

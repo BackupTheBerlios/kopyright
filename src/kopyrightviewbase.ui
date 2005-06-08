@@ -21,7 +21,7 @@
         </property>
         <widget class="QFrame" row="0" column="0">
             <property name="name">
-                <cstring>frame17</cstring>
+                <cstring>m_fillFrame</cstring>
             </property>
             <property name="sizePolicy">
                 <sizepolicy>
@@ -41,45 +41,12 @@
                 <property name="name">
                     <cstring>unnamed</cstring>
                 </property>
-                <widget class="KRuler">
-                    <property name="name">
-                        <cstring>m_fillRuler</cstring>
-                    </property>
-                    <property name="sizePolicy">
-                        <sizepolicy>
-                            <hsizetype>7</hsizetype>
-                            <vsizetype>5</vsizetype>
-                            <horstretch>0</horstretch>
-                            <verstretch>0</verstretch>
-                        </sizepolicy>
-                    </property>
-                    <property name="frameShadow">
-                        <enum>Sunken</enum>
-                    </property>
-                    <property name="maxValue">
-                        <number>1000</number>
-                    </property>
-                </widget>
-                <widget class="QLabel">
-                    <property name="name">
-                        <cstring>m_totalSize</cstring>
-                    </property>
-                    <property name="paletteForegroundColor">
-                        <color>
-                            <red>116</red>
-                            <green>116</green>
-                            <blue>116</blue>
-                        </color>
-                    </property>
-                    <property name="font">
-                        <font>
-                            <bold>1</bold>
-                        </font>
-                    </property>
-                    <property name="text">
-                        <string>00.00 b</string>
-                    </property>
-                </widget>
+                <property name="margin">
+                    <number>5</number>
+                </property>
+                <property name="spacing">
+                    <number>0</number>
+                </property>
             </hbox>
         </widget>
         <widget class="QSplitter" row="1" column="0">
@@ -648,6 +615,8 @@
         </widget>
     </grid>
 </widget>
+<customwidgets>
+</customwidgets>
 <images>
     <image name="image0">
         <data format="PNG" length="1643">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000006324944415458859d973d6c54d915c77ff77dcc8767c6188c0db6c56291c58434201969b5203a948a2ac51691d291224a91284ab565ca2455e8b6a0a10929235120a522d24a816a83642c1624b262e28f6011339ef1ccbc7bcfd9e2dd37ef3e7b40519e7435f7ddf771fee77ffee77fdf983b77eefcfcca952bbfaed56aa9880880aa521ce1fce8dac7ae7d684d5549d3b4b6b1b1b171fffefddf72f7eedd97aaaa22a2ffef21e19072381175222a7e3811cdb24c55559f3c79a28b8b8bbf4b6ab55a3dcb32f6f6f6c8c623223b44399e450e1f30d397a7a45d5937281aa538524e9f9ec718431cc7e712e79c1863103be6f77ffa8a7fbcea93341a791c3df27a058c4e5f9f7652991a92c10e5ffef20b566efd18e71caa4a02604c44ac966fbe3be0e24f7ec3e54f4e723802e740441107d6828ae66b0e9c2822fe7ae517d49fabe6e7a8425ae36f7ff903ffdddb25499209b04455514f7aa35ee3872b1daeacced23f04b1607d70911c90753988628807e5c403738a683e970a8084939d26268a2aa24c8a7af942311c09fd211c0ea50c64153b091a02c88315000b302a1e906705057509ce292632b9227ccca4981803116642b14c0916665e392fe8f7f39c193f342f1d061030c6a02a471828d2f7644840e964eeb30a83dba20436b8a708ee4a16f0ba15c9130d355b01600c653dade60185490017645894445cf94c012c14a5933c730544158ca974f204803139082da8552f3a0fc41699db601e682464a7089c0b519930ae6030d31928b4e054cbac8a97391017ae078c548297ac58f16debdb5235ff35413c55f56da88a3186c8984080414d1d01ed41096cd8829e1d5f0af1cf5b018a96d4a20ba66a20d761813a3416a75a1159c148858d42279e11f16044f212089e0113b47d5503068399086fa2fab0c5dc71ba9d2b3d420246ac2b9f9bb4a32ac64495925719a0ac95785a35e8efc9cb424b9ef846605621482117b6372463a694a020c418e3a92fe93f3ef4589b15cc4860cdd6f9725abf1ee7d7a6fb4060c5aa85604a2f3f6e44d575093490051ac9855ade5b3050f1012df66daf817247d30f663da96d91b104161c0ad40640a2fc9dc5367f4c03d5fe2c3cbcdc568bad75024473b32a811c156790bd051be5efc118242842be19f92f1d5190a886460635291a81443e2820261f0eb0284ec16a3eb77eee54c97c173855ac333811ac18ac8d30e807ac384e699b217ffdf3577c7d7216e77283525764afa878d3f276aabed55424774a2deef125542606a0d4a8bdff27697dbdf2519b0088380e478e2f7ff533ee6c6f13c57189b2d23539fa719661c719511c11c7114992620c9828227cac6839cd8b4e9cacb3786699c160503210c771da6834e8743acccdcd71e1c2a7a80ace09f57a8d667386a3c7ab57afd9ddd9a5dd6e331a67743a2d2e5dfaf4d87d2eb3f4fb03d4c8c480b22ca3d56a51afd731c698647373f39ba74f9f2e2d2c2cd06eb769b55ac4718ab596e170c49b375da228c23947bd5e2749129acd1a177e709e288ab0d6e29ca3dbede29c238a229224a196d4d87cb349e6323ebbfc194e1dc3e190f7efdfb3b5b5c5e3c78f3938383834ad56ebd29933677eb1bcbc7c637e7efef4eaeaeadcdada5a6b6565255d5858603c1e53afd71111ce9d3b5720278aa209c52282b51655c539c7783c469cf0bafb9aaded2d74a4faedcb6fc72f5ebc38d8dedededfd9d9d9ed76bb2ffbfdfec3a2c22780156001584c9264b9d96c2ecfcccc2cb6dbedb3b76fdffefce6cd9b27debe7d4bb3d9cccdc4988a988c310c0603666666d8dfdfe7debd7bffdaddd97d31180cb6fb83fe7fc6e3f10eb00bec01ef806d60a7e8827d3f008cb536e9f57a8d5eaf97f67abdcbe7cf9f7f78f1e245e6e7e7999d9d2549127abd1ea3d188388e69b55a341a0ddebd7b4792240c874346a3d156f7dfdd3f029bc0d08f43c012b8f1b1cdc85fcca228ca565757595b5b5bbd7af5ea8953a74ed16ab51011e238666e6e6ef2405182a5a525e238264912ae5fbfbebab1b1e180efa6c428bb60da629aa6dcb87183a5a525e6e7e7bfb876ed1af57a1de75c89d2d35efc8647b3d9e4d6ad5b671f3c78f079afd7fbda67febf03585c5ca4dfeff3ecd933d6d7d76b8f1e3d9a7c427de808afd56a359e3f7f4e9aa69f009d8f0198f257b37a743a9d1fc571fc53e0ecc7001c7dafb576dceff7ff0e3ca4d4d7b1e37b72e8e9ba24bddf540000000049454e44ae426082</data>
@@ -698,7 +667,6 @@
 </slots>
 <layoutdefaults spacing="6" margin="11"/>
 <includehints>
-    <includehint>kruler.h</includehint>
     <includehint>klistview.h</includehint>
     <includehint>klistview.h</includehint>
 </includehints>
