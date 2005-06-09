@@ -35,13 +35,20 @@
 #include <klocale.h>
 #include <kruler.h>
 
-KopyRightView::KopyRightView(QWidget *parent) : KopyRightViewBase(parent), DCOPObject("KopyRightIface")
+KopyRightView::KopyRightView(QWidget *parent) 
+	: KopyRightViewBase(parent), DCOPObject("KopyRightIface")
 {
   // setup our layout manager to automatically add our widgets
-  QHBoxLayout *top_layout = new QHBoxLayout(this);
-  top_layout->setAutoAdd(true);
-  m_fillStatus = new QFillStatus(2700000, 4700000, m_fillFrame);
+  //QHBoxLayout *top_layout = new QHBoxLayout(this);
+  //top_layout->setAutoAdd(true);
+	m_fillStatus = new QFillStatus(100, 50, m_fillFrame);
   m_fillFrameLayout->addWidget(m_fillStatus);
+  connect((QWidget*)m_videoShrink,	SIGNAL(valueChanged(int)),
+	   this,			SLOT(setVideoQualityLabel(int)));
+  // TODO: This is to test QFillStatus: remove
+  connect((QWidget*)m_videoShrink,	SIGNAL(valueChanged(int)),
+	   m_fillStatus,		SLOT(setFill(int)));
+
 }
 
 KopyRightView::~KopyRightView()
@@ -199,4 +206,8 @@ void KopyRightView::viewTitle(QListViewItem *title)
   }
 }
 
+void KopyRightView::setVideoQualityLabel(int q)
+{
+	m_videoQualityLabel->setText(QString("%1% of video quality").arg(q));
+}
 #include "kopyrightview.moc"

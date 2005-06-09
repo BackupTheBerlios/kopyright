@@ -89,6 +89,7 @@ public slots:
   virtual void editTitle(QListViewItem *stream);
   virtual void requantTitle(const QString &factor);
   virtual void viewTitle(QListViewItem *title);
+  void setVideoQualityLabel(int q);
 
 private slots:
   void slotSetStatus(const QString& status);

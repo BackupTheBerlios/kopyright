@@ -187,66 +187,42 @@
                                 </widget>
                             </hbox>
                         </widget>
-                        <widget class="Line">
-                            <property name="name">
-                                <cstring>lineVideo</cstring>
-                            </property>
-                            <property name="frameShape">
-                                <enum>HLine</enum>
-                            </property>
-                            <property name="frameShadow">
-                                <enum>Sunken</enum>
-                            </property>
-                            <property name="orientation">
-                                <enum>Horizontal</enum>
-                            </property>
-                        </widget>
                         <widget class="QLayoutWidget">
                             <property name="name">
-                                <cstring>layout119</cstring>
+                                <cstring>layout6</cstring>
                             </property>
                             <hbox>
                                 <property name="name">
                                     <cstring>unnamed</cstring>
                                 </property>
-                                <widget class="QLineEdit">
+                                <widget class="QSlider">
                                     <property name="name">
                                         <cstring>m_videoShrink</cstring>
                                     </property>
-                                    <property name="sizePolicy">
-                                        <sizepolicy>
-                                            <hsizetype>1</hsizetype>
-                                            <vsizetype>0</vsizetype>
-                                            <horstretch>0</horstretch>
-                                            <verstretch>0</verstretch>
-                                        </sizepolicy>
+                                    <property name="minValue">
+                                        <number>1</number>
                                     </property>
-                                </widget>
-                                <widget class="QLabel">
-                                    <property name="name">
-                                        <cstring>textLabel1</cstring>
+                                    <property name="maxValue">
+                                        <number>100</number>
                                     </property>
-                                    <property name="text">
-                                        <string>% of original quality</string>
-                                    </property>
-                                </widget>
-                                <spacer>
-                                    <property name="name">
-                                        <cstring>spacer11</cstring>
+                                    <property name="value">
+                                        <number>100</number>
                                     </property>
                                     <property name="orientation">
                                         <enum>Horizontal</enum>
                                     </property>
-                                    <property name="sizeType">
-                                        <enum>Expanding</enum>
+                                    <property name="tickmarks">
+                                        <enum>Above</enum>
                                     </property>
-                                    <property name="sizeHint">
-                                        <size>
-                                            <width>220</width>
-                                            <height>20</height>
-                                        </size>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>m_videoQualityLabel</cstring>
                                     </property>
-                                </spacer>
+                                    <property name="text">
+                                        <string>100% of original quality</string>
+                                    </property>
+                                </widget>
                             </hbox>
                         </widget>
                         <widget class="QLayoutWidget">
@@ -314,20 +290,6 @@
                                     </property>
                                 </widget>
                             </hbox>
-                        </widget>
-                        <widget class="Line">
-                            <property name="name">
-                                <cstring>lineAudio</cstring>
-                            </property>
-                            <property name="frameShape">
-                                <enum>HLine</enum>
-                            </property>
-                            <property name="frameShadow">
-                                <enum>Sunken</enum>
-                            </property>
-                            <property name="orientation">
-                                <enum>Horizontal</enum>
-                            </property>
                         </widget>
                         <widget class="QListView">
                             <column>
@@ -468,20 +430,6 @@
                                     </property>
                                 </widget>
                             </hbox>
-                        </widget>
-                        <widget class="Line">
-                            <property name="name">
-                                <cstring>lineSubpicture</cstring>
-                            </property>
-                            <property name="frameShape">
-                                <enum>HLine</enum>
-                            </property>
-                            <property name="frameShadow">
-                                <enum>Sunken</enum>
-                            </property>
-                            <property name="orientation">
-                                <enum>Horizontal</enum>
-                            </property>
                         </widget>
                         <widget class="QListView">
                             <column>
@@ -640,12 +588,6 @@
         <signal>clicked(QListViewItem*)</signal>
         <receiver>KopyRightViewBase</receiver>
         <slot>viewTitle(QListViewItem*)</slot>
-    </connection>
-    <connection>
-        <sender>m_videoShrink</sender>
-        <signal>textChanged(const QString&amp;)</signal>
-        <receiver>KopyRightViewBase</receiver>
-        <slot>requantTitle(const QString&amp;)</slot>
     </connection>
     <connection>
         <sender>m_propSubpictur</sender>

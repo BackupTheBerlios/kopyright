@@ -32,11 +32,13 @@ public:
 	QFillStatus(int fill=0, int maxFill=4700000, QWidget* parent=0, const char* name="unnamed", WFlags f=0);
 	~QFillStatus();
 
-	int fill();
+	int fill() const;
+	int maxFill() const;
+ 
+public slots:
 	void setFill(int fill);
-	
-	int maxFill();
 	void setMaxFill(int maxFill);
+	
 protected:
 	void QFillStatus::paintEvent(QPaintEvent*);
 

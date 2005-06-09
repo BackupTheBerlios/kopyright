@@ -34,10 +34,13 @@ QFillStatus::~QFillStatus()
 {
 }
 
-int QFillStatus::fill() { return m_fill; }
-void QFillStatus::setFill(int fill) { m_fill = fill; }
+int QFillStatus::fill() const { return m_fill; }
+void QFillStatus::setFill(int fill) { 
+	m_fill = fill; 
+	update();
+}
 	
-int QFillStatus::maxFill() { return m_maxFill; }
+int QFillStatus::maxFill() const { return m_maxFill; }
 void QFillStatus::setMaxFill(int maxFill) { m_maxFill = maxFill; }
 
 void QFillStatus::paintEvent(QPaintEvent* /*e*/)
