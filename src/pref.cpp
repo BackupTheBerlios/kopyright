@@ -24,37 +24,91 @@
 
 #include <qlayout.h>
 #include <qlabel.h>
+#include <qlineedit.h>
 
-KopyRightPreferences::KopyRightPreferences()
-    : KDialogBase(TreeList, i18n("KopyRight Preferences"),
-                  Help|Default|Ok|Apply|Cancel, Ok)
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+KopyRightPreferences::KopyRightPreferences() : KDialogBase(TreeList, i18n("KopyRight Preferences"), Help|Default|Ok|Apply|Cancel, Ok)
 {
-    // this is the base class for your preferences dialog.  it is now
-    // a Treelist dialog.. but there are a number of other
-    // possibilities (including Tab, Swallow, and just Plain)
-    QFrame *frame;
-    frame = addPage(i18n("First Page"), i18n("Page One Options"));
-    m_pageOne = new KopyRightPrefPageOne(frame);
+  // this is the base class for your preferences dialog.  it is now a Treelist dialog.. but
+  // there are a number of other possibilities (including Tab, Swallow, and just Plain)
+  QFrame *frame;
+  frame = addPage(i18n("Paths"), i18n("Paths for DVD and work space directories"));
+  m_pageOne = new KopyRightPrefPageOne(frame);
 
-    frame = addPage(i18n("Second Page"), i18n("Page Two Options"));
-    m_pageTwo = new KopyRightPrefPageTwo(frame);
+//  frame = addPage(i18n("Second Page"), i18n("Page Two Options"));
+//  m_pageTwo = new KopyRightPrefPageTwo(frame);
 }
 
-KopyRightPrefPageOne::KopyRightPrefPageOne(QWidget *parent)
-    : QFrame(parent)
+void KopyRightPreferences::setDevice(QString device)
+{
+  m_pageOne->setDvd(device);
+}
+
+void KopyRightPreferences::setWorkSpace(QString workSpace)
+{
+  m_pageOne->setDir(workSpace);
+}
+
+QString KopyRightPreferences::device()
+{
+  return m_pageOne->dvd();
+}
+
+QString KopyRightPreferences::workSpace()
+{
+  return m_pageOne->dir();
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+KopyRightPrefPageOne::KopyRightPrefPageOne(QWidget *parent) : QFrame(parent)
+{
+  QVBoxLayout *vertical = new QVBoxLayout(parent);
+
+  vertical->addWidget(new QLabel(i18n("DVD Device"), parent));
+  m_dvdInput = new QLineEdit(parent);
+  vertical->addWidget(m_dvdInput);
+  vertical->addItem( new QSpacerItem( 40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum ));
+
+  vertical->addWidget(new QLabel(i18n("Output Directory"), parent));
+  m_workSpace = new QLineEdit(parent);
+  vertical->addWidget(m_workSpace);
+  vertical->addItem( new QSpacerItem( 151, 20, QSizePolicy::Minimum, QSizePolicy::Expanding ));
+
+  clearWState( WState_Polished );
+}
+
+void KopyRightPrefPageOne::setDvd(QString dvd)
+{
+  m_dvdInput->setText(dvd);
+}
+
+void KopyRightPrefPageOne::setDir(QString dir)
+{
+  m_workSpace->setText(dir);
+}
+
+QString KopyRightPrefPageOne::dvd()
+{
+  return m_dvdInput->text();
+}
+
+QString KopyRightPrefPageOne::dir()
+{
+  return m_workSpace->text();
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+/*
+KopyRightPrefPageTwo::KopyRightPrefPageTwo(QWidget *parent) : QFrame(parent)
 {
     QHBoxLayout *layout = new QHBoxLayout(this);
     layout->setAutoAdd(true);
 
     new QLabel(i18n("Add something here"), this);
 }
+*/
+//------------------------------------------------------------------------------------------------------------------------------------------
 
-KopyRightPrefPageTwo::KopyRightPrefPageTwo(QWidget *parent)
-    : QFrame(parent)
-{
-    QHBoxLayout *layout = new QHBoxLayout(this);
-    layout->setAutoAdd(true);
-
-    new QLabel(i18n("Add something here"), this);
-}
 #include "pref.moc"
